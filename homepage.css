@@ -1,0 +1,249 @@
+/* Glassmorphism effect for navbar */
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.15); /* Brighter semi-transparent white background */
+    backdrop-filter: blur(12px); /* Stronger blurring effect */
+    border: 1px solid rgba(255, 255, 255, 0.25); /* Brighter semi-transparent border */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Glassmorphism effect for container */
+.glassmorphism-container {
+    background: rgba(255, 255, 255, 0.15); /* Brighter semi-transparent white background */
+    backdrop-filter: blur(12px); /* Stronger blurring effect */
+    border: 1px solid rgba(255, 255, 255, 0.25); /* Brighter semi-transparent border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the container */
+}
+
+/* Background gradient for the body */
+body {
+    background: #1f1f2e; /* Brighter gradient */
+    color: #ffffff; /* Text color */
+    /* Space for profile section */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Custom Hamburger Menu */
+.hamburger-menu {
+    cursor: pointer; /* Pointer cursor on hover */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30px;
+    height: 20px;
+}
+
+.hamburger-menu .bar {
+    background-color: #ffffff; /* Bar color */
+    height: 3px;
+    width: 100%;
+    margin: 3px 0; /* Space between bars */
+    border-radius: 2px; /* Rounded corners for bars */
+}
+
+/* Hide the hamburger menu on large screens */
+.d-lg-none {
+    display: none;
+}
+
+/* Show the hamburger menu on small screens */
+@media (max-width: 991.98px) {
+    .d-lg-none {
+        display: flex;
+    }
+}
+
+/* NEP Description Styling */
+.nep-container {
+    position: relative;
+    max-width: 800px; /* Limit width for better readability */
+    margin: 20px auto; /* Center horizontally */
+}
+
+.nep-description {
+    font-family: 'Arial', sans-serif; /* Clean and readable font */
+    line-height: 1.6; /* Increase line height for readability */
+    color: #ffffff; /* Light text color */
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Larger screen text */
+.nep-large {
+    display: block; /* Display on larger screens */
+}
+
+/* Smaller screen text */
+.nep-small {
+    display: none; /* Hide by default */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nep-large {
+        display: none; /* Hide large text on small screens */
+    }
+    .nep-small {
+        display: block; /* Show small text on small screens */
+        font-size: 1rem; /* Adjust font size for readability */
+        padding: 15px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 576px) {
+    .nep-small {
+        font-size: 0.9rem; /* Further reduce font size */
+        padding: 10px; /* Further adjust padding */
+    }
+}
+
+/* Profile Section */
+.profile-welcome, .profile-name {
+    margin: 0;
+    font-size: 0.9rem; /* Font size for welcome message */
+    color: #ffffff; /* White text color */
+}
+
+.profile-name {
+    font-size: 1rem; /* Font size for the name */
+}
+
+/* Bootstrap Card Customization */
+.card-custom {
+    background-color: #f8f9fa; /* Light background color for card */
+    border: 1px solid #e0e0e0; /* Subtle border for card */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 1rem; /* Space between cards */
+}
+
+.card-header-custom {
+    background-color: #343a40; /* Dark background for header */
+    color: #ffffff; /* White text color for header */
+    font-weight: bold; /* Bold text */
+}
+
+.card-body-custom {
+    background-color: #ffffff; /* White background for body */
+    color: #000000; /* Dark text color */
+}
+
+/* Responsive Card Adjustments */
+@media (max-width: 768px) {
+    .card-custom {
+        margin-bottom: 0.5rem; /* Reduce margin between cards on smaller screens */
+    }
+}
+.heading-box {
+    background-color: #343a40; /* Blue background color */
+    color: white; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 15px; /* Padding for height control */
+    margin: 65px auto; /* Center the box horizontally */
+    max-width: 800px; /* Limit the width of the box */
+    height: 60px; /* Maximum height of the box */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 24px; /* Font size for the text */
+    font-weight: bold; /* Bold font weight */
+}
+.glassmorphism-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px; /* Add padding inside the card */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Ensure the card uses the full width of the container */
+    max-width: 1000px; /* Limit the card's maximum width */
+    flex-direction: column; /* Stack elements vertically */
+    box-sizing: border-box; /* Include padding in width/height */
+
+}
+#carousel {
+    position: relative;
+    overflow: hidden;
+    max-height: 800px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+   
+}
+.slide-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    
+    color: #fff; /* Optional: adjust text color */
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem; /* Adjust as needed */
+    z-index: 10; /* Ensure it's on top */
+  }
+
+#slides {
+    display: flex;
+    transition: transform 0.7s ease-in-out;
+    
+}
+
+.carousel-slide {
+    display: flex;
+    justify-content: center; /* Center align the card in the slide */
+    min-width: 100%; /* Each slide takes up 100% of the carousel width */
+}
+
+
+.carousel-slide img {
+    margin: 10px; /* Add margin around images */
+}
+.carousel-slide {
+    display: flex;
+    justify-content: center; /* Center align the card in the slide */
+}
+.glassmorphism-card img {
+    width: 45%; /* Adjust image width */
+    object-fit: cover; /* Ensure the image covers the space while maintaining aspect ratio */
+    margin-bottom: 20px; /* Space between the image and text */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+.glassmorphism-card p {
+    margin: 0; /* Remove default margin */
+    font-size: 1.1rem; /* Font size adjustment */
+    line-height: 1.6; /* Improve readability */
+    color: #ffffff; /* White text color */
+    text-align: center; /* Center the text */
+    max-width: 90%; /* Constrain paragraph width */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis to overflowing text */
+
+}
+@media (max-width: 768px) {
+    .glassmorphism-card {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+    .glassmorphism-card img {
+        width: 60%; /* Increase image width on smaller screens */
+    }
+    .glassmorphism-card p {
+        font-size: 1rem; /* Reduce font size for readability on small screens */
+        line-height: 1.4; /* Adjust line height */
+    }
+}   
+.container {
+    max-width: 1200px; /* Adjust the max-width as needed */
+}
+
+  
+  footer {
+    margin-top: auto;
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust this based on your glassmorphism effect */
+    padding: 20px 0;
+  }
+  
