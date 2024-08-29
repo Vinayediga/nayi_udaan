@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nayi Udaan</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+  rel="stylesheet"
+/>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link href="homepage.css" rel="stylesheet" />
+    <!-- Custom CSS for glassmorphism -->
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light glassmorphism fixed-top">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <!-- Custom Hamburger Menu -->
+          <div class="hamburger-menu me-2" onclick="toggleNavbar()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <!-- Project Name -->
+          <a class="navbar-brand" href="#">Nayi Udaan</a>
+        </div>
+        <!-- Sidebar for mobile -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="homepage.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="scholorship.html">Scholorship</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="career_advice.html">Career Advice</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex align-items-center ms-auto">
+          <span class="profile-name d-none d-md-block" id="profile-name"
+            >John Doe</span
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <!-- Heading Box -->
+    <div class="heading-box">NAYI UDAAN</div>
+
+    <!-- Content -->
+    <div class="container mt-5 pt-5 glassmorphism-container">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Photo with border-radius -->
+          <img
+            src="https://www.thestatesman.com/wp-content/uploads/2022/09/03_Merged.jpg"
+            alt="Photo"
+            class="img-fluid"
+            style="border-radius: 15%"
+          />
+        </div>
+        <div class="col-md-6" class="nep-description">
+          <p id="nep-large" class="nep-description nep-large">
+            The National Education Policy (NEP) 2020 is a comprehensive
+            framework for the development of education in India. It aims to
+            transform the Indian education system by introducing innovative
+            reforms to improve quality, accessibility, and inclusiveness. The
+            NEP envisions a holistic approach to education, emphasizing critical
+            thinking, vocational training, and the integration of technology. It
+            seeks to provide a robust foundation for lifelong learning and skill
+            development, ensuring that every student is prepared to meet the
+            challenges of a rapidly changing world. This policy is set to
+            revolutionize the educational landscape, addressing various
+            challenges and paving the way for a more equitable and progressive
+            system.
+          </p>
+          <p id="nep-small" class="nep-description nep-small">
+            The National Education Policy (NEP) 2020 aims to transform the
+            Indian education system by introducing innovative reforms. It
+            focuses on improving quality, accessibility, and inclusiveness, with
+            a holistic approach that includes critical thinking and vocational
+            training.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+      
+
+    <div class="container mx-auto mt-10" >
+      <div class="relative w-full max-w-2xl mx-auto">
+        <div id="carousel" class="relative w-full overflow-hidden">
+          <!-- Slides Wrapper -->
+          <div
+            class="flex transition-transform duration-700 ease-in-out"
+            id="slides"
+          >
+            <!-- Slide 1 -->
+            <div class="carousel-slide w-full flex-none">
+              <div
+                class="glassmorphism-card p-8 rounded-lg shadow-lg flex flex-col items-center justify-between"
+              >
+              
+                <img
+                  src="ss.jpg"
+                  alt="Slide 1"
+                  class="rounded-lg mb-4"
+                  style="width: 45%; height: auto"
+                />
+                <p
+                  class="text-white font-semibold text-center"
+                  style="font-size: 1.25rem; line-height: 1.75"
+                >
+                  It is never too late to follow your dreams and passion and
+                  this Bangalore couple did just that. Nidhi Singh and her
+                  husband, Shikhar Veer Singh, left their high-paying jobs and
+                  even sold their house to start selling samosas. Now, the idea
+                  could have been laughed at or frowned upon initially, but
+                  Nidhi and Shikhar are having the last laugh as they are
+                  smiling their way to the bank. They are earning more than
+                  their jobs would have ever paid them.Their business has grown
+                  manifold in a couple of years. At this juncture, their
+                  company's annual turnover was Rs 45 crore.
+                </p>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-slide w-full flex-none">
+              <div
+                class="glassmorphism-card p-8 rounded-lg shadow-lg flex flex-col items-center justify-between"
+              >
+              
+                <img
+                  src="image_1.jpg"
+                  alt="Slide 2"
+                  class="rounded-lg mb-4"
+                  style="width: 45%; height: auto"
+                />
+                <p
+                  class="text-white font-semibold text-center"
+                  style="font-size: 1.25rem; line-height: 1.75"
+                >
+                  When the world was grappling with COVID-19, Rishabh Gupta was
+                  working with the Mashreq Bank in Dubai after completing his
+                  engineering in Computer Science. When loneliness in a faraway
+                  land hit him, he came back home. His Delhi-based parents,
+                  Rashmi and Rakesh Arya, had also moved to their hometown in
+                  Shamsabad, Agra (Uttar Pradesh) during the lockdown. “After
+                  coming home, I decided not to go back again. I wanted to
+                  pursue something here, and organic farming was one of the
+                  options since our family owns around 3 acres of land here in
+                  Shamsabad,” says 27-year-old Rishabh. Around the same time,
+                  his younger brother Ayush Gupta completed his BBA from the
+                  University of London and returned to India. The two brothers
+                  took online training on vegetable farming at the Centre of
+                  Excellence for Vegetables, Gharaunda (Karnal). It is an
+                  Indo-Israel Project approved by the Ministry of Agriculture.
+                </p>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-slide w-full flex-none">
+              <div
+                class="glassmorphism-card p-8 rounded-lg shadow-lg flex flex-col items-center justify-between"
+              >
+              
+                <img
+                  src="ips.jpg"
+                  alt="Slide 3"
+                  class="rounded-lg mb-4"
+                  style="width: 45%; height: auto"
+                />
+                <p
+                  class="text-white font-semibold text-center"
+                  style="font-size: 1.25rem; line-height: 1.75"
+                >
+                  IPS N Ambika has performed such a task which we cannot even
+                  think of. It isn’t that she didn’t face any troubles in her
+                  journey, the difference is just that she didn’t give up at any
+                  point. Continue reading this article to know more about N
+                  Ambika’s journey, preparation strategy, current posting and
+                  life after becoming an IPS.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+<!-- Footer -->
+<footer class="glassmorphism mt-auto pt-4" style="color: white;">
+    <div class="container">
+      <div class="row">
+        <!-- Column 1: About Us -->
+        <div class="col-md-4">
+          <h5 class="text-uppercase mb-3">About Nayi Udaan</h5>
+          <p class="text-white">
+            Nayi Udaan is dedicated to empowering individuals by providing the
+            necessary guidance and resources to achieve their educational and
+            career goals. Join us in our mission to create a brighter future.
+          </p>
+        </div>
+        <!-- Column 2: Quick Links -->
+        <div class="col-md-4">
+          <h5 class="text-uppercase mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="homepage.html" class="text-white">Home</a></li>
+            <li><a href="#courses" class="text-white">Scholarship</a></li>
+            <li><a href="career_advice.html" class="text-white">Career Advice</a></li>
+            <li><a href="#contact" class="text-white">Contact</a></li>
+            <li><a href="#about" class="text-white">About</a></li>
+          </ul>
+        </div>
+        <!-- Column 3: Contact Us -->
+        <div class="col-md-4">
+          <h5 class="text-uppercase mb-3">Contact Us</h5>
+          <ul class="list-unstyled text-white">
+            <li><i class="bi bi-geo-alt-fill me-2"></i>1234 Street Name, City, Country</li>
+            <li><i class="bi bi-envelope-fill me-2"></i>info@nayiudaan.com</li>
+            <li><i class="bi bi-telephone-fill me-2"></i>+1 234 567 890</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Footer Bottom -->
+      <div class="row mt-4">
+        <div class="col-md-12 text-center">
+          <p class="text-white mb-0">
+            &copy; 2024 Nayi Udaan. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+
+    
+  </body>
+  <script src="homepage.js"></script>
+</html>
